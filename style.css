@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+}
+
+/* NAVIGATION */
+.menu {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  background-color: #191919;
+  align-items: center;
+  margin-bottom: 20px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  padding: 15px;
+}
+
+.menu .brand {
+  font-size: 1.3em;
+  color: white;
+}
+
+.menu ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.menu a {
+  display: block;
+  background-color: #191919;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  margin-top: 40px;
+  display: grid;
+  grid-template-areas:
+    "hero hero feature-1"
+    "hero hero feature-2";
+  padding-bottom: 50px;
+}
+
+.hero {
+  grid-area: hero;
+  color: white;
+  min-height: 300px;
+  background-image: url(image/1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  /* Photo by Widya on Pinterest*/
+}
+
+.hero .heading {
+  font-size: 3em;
+}
+
+.feature {
+  background-color: #000;
+  color: white;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  cursor: pointer;
+  background-position: center;
+}
+
+.feature-1 {
+  grid-area: feature-1;
+  background-image: url(image/1.1.jpg);
+  background-size: cover;
+  /* Image by  Debora mathilde camilie on Pinterest */
+}
+
+.feature-1 .pulau {
+  font-size: 2.5em;
+}
+
+.feature-2 {
+  grid-area: feature-2;
+  background-image: url(image/1.2.jpg);
+  background-size: cover;
+  /* Image by <a href="https://pixabay.com/users/innokurnia-12209033/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4271941">inno kurnia</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4271941">Pixabay</a> */
+}
+
+.feature-2 .pulau {
+  font-size: 2.5em;
+}
+
+/* Content1 -- rekomendasi */
+
+.content1 {
+  margin-bottom: 50px;
+  padding: 2rem 2rem 2rem;
+  padding-bottom: 100px;
+  background-color: #aaa;
+}
+
+.options {
+  padding: 10px;
+}
+
+.recom {
+  margin-bottom: 16px;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+
+.bagan {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  padding: 15px;
+  place-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.option {
+  max-width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.option .wisata {
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.wisata .gambar {
+  padding: round;
+  box-shadow: #aaa;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* Content2 -- Pilihan wisata indonesia */
+.content2 {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.galleries {
+  padding: 10px;
+}
+
+.rekom2 {
+  padding: 50px;
+  text-align: center;
+  color: white;
+  font-size: xx-large;
+}
+
+.pilihan {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 15px;
+  place-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.pilih {
+  max-width: 30%;
+  max-height: 20%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.option .card {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.card .gambar {
+  padding: round;
+  box-shadow: white;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card .judul {
+  font-size: 1.5em;
+  color: #333;
+}
+.card .caption {
+  color: #333;
+  padding: 10px;
+  max-width: fit-content;
+}
+
+.contact {
+  margin-top: 36px;
+  background-color: #191919;
+  padding: 50px;
+  align-items: center;
+}
+
+.me {
+  text-align: center;
+  font-size: small;
+}
+
+.me .credit {
+  color: white;
+}
+
+.me a {
+  color: white;
+  text-decoration: none;
+}
